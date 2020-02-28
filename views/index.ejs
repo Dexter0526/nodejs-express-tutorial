@@ -15,12 +15,11 @@
     <% } %>
   </ul>
 
-  <% if(username){%>
-  <h2><%=username%> (name:<%=name%>) </h2>
-  <%}else{%>
-  <h2>login</h2>
-  %<}%>
-
+  <% if(username){ %>
+  <h2>Welcome! <%= username %> (name: <%= name %>)</h2>
+  <% }else{ %>
+  <h2> Please Login. </h2>
+  <% } %>
 </body>
 
 </html>
